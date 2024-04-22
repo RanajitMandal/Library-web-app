@@ -1,6 +1,7 @@
 import { RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
-import Adminlogin from './Components/Adminlogin';
-import Dashboard from './Components/Dashboard';
+import Adminlogin from '../pages/Adminlogin';
+import Dashboard from '../pages/DashBoard';
+import UserList from "../pages/UserList";
 
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     {
       path: '/dashboard',
       element: <Dashboard />
+    },
+    {
+      path: '/userlist',
+      element: <UserList />
     },
    
   ]);
