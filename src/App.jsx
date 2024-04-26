@@ -2,6 +2,7 @@ import { RouterProvider, Routes, createBrowserRouter } from "react-router-dom";
 import Adminlogin from '../pages/Adminlogin';
 import Dashboard from '../pages/DashBoard';
 import UserList from "../pages/UserList";
+import AddUser from "./Components/AddUser";
 
 
 function App() {
@@ -18,6 +19,11 @@ function App() {
       path: '/userlist',
       element: <UserList />
     },
+    {
+      path: '/adduser',
+      element: <AddUser/>
+    },
+   
    
   ]);
   return (

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 // import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 import SideMenu from '../src/Components/SideMenu';
+import AddUser from '../src/Components/AddUser';
 export default function UserList() {
     const [users, setUsers] = useState(null);
     useEffect(() => {
@@ -32,8 +33,12 @@ export default function UserList() {
         };
 
     }
+    function AddUser() {
+        navigate("/AddUser");
+    }
     return (
         <div>
+
 
             <SideMenu />
 
@@ -41,6 +46,14 @@ export default function UserList() {
                 <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
 
                     <div>
+                        {/* <button 
+                            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"onClick={AddUser}> Add User 
+                        </button> */}
+                        <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                          onClick={AddUser}
+
+                        >AddUser</button>
+
 
                         <div className="relative overflow-x-auto">
                             <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
