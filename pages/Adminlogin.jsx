@@ -5,7 +5,7 @@ import DashBoard from './DashBoard';
 export default function AdminLogin() {
   const Navigate = useNavigate();
   function cDashboard() {
-    Navigate("/DashBoard");
+    Navigate("/dashboard");
   }
   return (
     <div className="flex justify-center items-center h-screen">
