@@ -1,3 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+.relative.overflow-x-auto {
+    width: 76%;
+    margin-left: 285px;
+}
+#dashbord{
+    margin-left: 282px;
+}
